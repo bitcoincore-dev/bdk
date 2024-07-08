@@ -24,7 +24,7 @@ jobs:
         with:
             toolchain: ${{ matrix.rust.version }}
             override: true
-            profile: minimal
+            profile: default
       - name: Rust Cache
         uses: Swatinem/rust-cache@v2.2.1
       - name: Pin dependencies for MSRV
