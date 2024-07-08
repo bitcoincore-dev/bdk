@@ -37,7 +37,7 @@ jobs:
         uses: actions/checkout@v2
         with:
           ssh-key: ${{ secrets.DOCS_PUSH_SSH_KEY }}
-          repository: bitcoindevkit/bitcoindevkit.org
+          repository: ${{ github.repository }}
           ref: master
       - name: Create directories
         run: mkdir -p ./docs/.vuepress/public/docs-rs/bdk/nightly
