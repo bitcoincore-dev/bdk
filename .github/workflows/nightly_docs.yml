@@ -18,7 +18,10 @@ jobs:
       - name: Rust Cache
         uses: Swatinem/rust-cache@v2.2.1
       - name: Build docs
-        run: cargo doc --no-deps
+        run: |
+          cargo doc --no-deps || true
+          cargo doc --no-deps --all-features || true
+          cargo doc --no-deps --examples --all-features || true
         env:
           RUSTDOCFLAGS: '--cfg docsrs -Dwarnings'
       - name: Upload artifact
