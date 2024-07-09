@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"enum":["Error","Excess"],"fn":["decide_change"],"struct":["BranchAndBoundCoinSelection","CoinSelectionResult","LargestFirstCoinSelection","OldestFirstCoinSelection"],"trait":["CoinSelectionAlgorithm"],"type":["DefaultCoinSelectionAlgorithm"]};

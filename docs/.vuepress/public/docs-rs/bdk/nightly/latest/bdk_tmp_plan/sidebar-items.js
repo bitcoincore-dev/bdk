@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"enum":["PlanState","RequiredSignatures","SigningError"],"fn":["plan_satisfaction"],"struct":["Assets","Plan","PlanKey","Requirements","SatisfactionMaterial"],"trait":["CanDerive"]};
